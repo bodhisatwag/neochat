@@ -24,3 +24,4 @@ If you have any issues after forking this repo feel free to add issues and I wil
 
 
 [Try at Heroku](http://neochat.herokuapp.com/)
+[Try at Nodejitsu](http://neochat.nodejitsu.com/)
