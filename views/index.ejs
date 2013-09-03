@@ -6,31 +6,31 @@
             </div>
         </div>
     <div class="container" ng-controller='AppCtrl'>
-        <div class="row">
+        <div class="row" style="height: 500px">
             <!-- Left Bar starts here -->
             <div class="span3 bs-docs-sidebar">
-                <div class="alert alert-info" style = "margin-bottom: 0 !important;">
+                <div class="alert alert-info" style = "margin-bottom: 0;">
                     <h4>Online</h4>
                 </div>
-                <ul class= "nav nav-list bs-docs-sidenav affix well">
+                <ul class= "nav nav-list bs-docs-sidenav affix" style = "margin: 0;">
                     <li ng-repeat='user in users'>
-                        <h4 class="media-heading"><a ng-click="mention(user)">{{user}}</a></h4>
+                        <a ng-click="mention(user)"><i class="icon-chevron-right"></i>{{user}}</a>
                     </li>
                 </ul>
             </div>
 
             <div class="span9" >
                 <h3 class="label label-inverse">Messages</h3>
-                <div class="well message-spot">
+                <div class="well message-spot" style="max-height: 400px;">
                     <p ng-repeat='message in messages' ng-class='message.me' class=''>
                         {{message.user}}: {{message.text}}
                     </p>
                 </div>
             </div>
              
-            <div class="span12">
+            <div class="span9 pull-right">
                 <form ng-submit='sendMessage()' class='well form-search form-send-message'>
-                <input ng-model='message' class='span10 input-message' placeholder='Message'>
+                <input ng-model='message' class='span7 input-message' placeholder='Message'>
                 <input type='submit' value='Send' class='btn btn-success' style='margin-left: 10px; margin-top: 0'>
                 </form>
             </div>       
@@ -92,7 +92,15 @@
             </div>
          </div>
       </div>
-   
+        <div class="navbar navbar-fixed-bottom">
+            <ul class="nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
    </div>
 
 <% include _includes/footer %>
