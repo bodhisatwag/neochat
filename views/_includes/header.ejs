@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head> 
+        <meta charset="utf8">
+        <base href="/">
+        <title>CN IRC</title>
+        <link rel='stylesheet' href='/_assets/css/bootstrap.min.css'>
+        <style type='text/css'>
+            body {
+                padding-top: 70px
+            }
+        </style>
+        <link rel='stylesheet' href='/_assets/css/bootstrap-responsive.min.css'>
+        <link rel='stylesheet' href='/_assets/css/app.css'>
+    </head>
+    <body ng-init="loadScopes()">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" type='button' data-toggle='collapse' data-target='.nav-collapse'>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href='./index.html'>IRC</a>
+                    <div nav-collapse collapse>
+                        <ul class="nav">
+                            <li class="active">
+                                <a href='./index.html'>Home</a>
+                            </li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <a data-toggle='modal' href='#changeNameModal'> Change my name </a>
+                            </li>
+                            <li>
+                                <a data-toggle='modal' href='#infoModal'> About </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>

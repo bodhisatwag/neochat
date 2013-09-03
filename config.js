@@ -5,7 +5,7 @@ module.exports = function(app, express, mongoose){
     // Configuration
     app.configure(function(){
         app.set('views', __dirname + '/views');
-        app.set('view engine', 'jade');
+        app.set('view engine', 'ejs');
         app.set('view options', {
             layout: false
         });
