@@ -23,4 +23,4 @@ This is repository originally forked from **[hugodias](https://github.com/hugodi
 If you have any issues after forking this repo feel free to add issues and I will try my best to help.
 
 
-[Try](http://neochat.herokuapp.com/)
+[Try at Heroku](http://neochat.herokuapp.com/)
