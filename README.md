@@ -1,9 +1,9 @@
-### Welcome to Node Chat(Angularjs+Nodejs+Socket.io Chat).
+### Welcome to Neochat(Angularjs+Nodejs+Socket.io Chat).
 This is a simple chatroom built in Nodejs and Socket.io with Angularjs as frontend MVC.
 
 ```
 $ cd /var/www
-$ git clone git@github.com:bodhisatwag/angularjs-socket-node-chat.git
+$ git clone git@github.com:bodhisatwag/neochat.git
 $ git branch branch_name
 $ git chekout branch_name
 ```
@@ -23,4 +23,4 @@ This is repository originally forked from **[hugodias](https://github.com/hugodi
 If you have any issues after forking this repo feel free to add issues and I will try my best to help.
 
 
-[Try](http://nodejschat-001.herokuapp.com/)
+[Try](http://neochat.herokuapp.com/)
