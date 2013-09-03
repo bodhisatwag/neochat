@@ -1,5 +1,6 @@
 {
-    "name": "angularjs-socketio-nodejs-chat",
+    "name": "neochat",
+    "subdomain": "neochat",
     "version": "0.0.1",
     "private": true,
     "engines": {
@@ -10,5 +11,8 @@
         "express": "latest",
         "ejs": "latest",
         "socket.io": ">= 0.9.6"
+    },
+    "scripts": {
+        "start": "node app.js"
     }
 }
