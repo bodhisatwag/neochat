@@ -1,6 +1,6 @@
 <% include _includes/header %>
     <!-- Preloader -->
-        <div id="preloader" >
+        <div id="preloader" style="padding: 200px 0 0 400px;">
             <div class="progress progress-indeterminate">
                 <div class="bar"></div>
             </div>
@@ -21,7 +21,7 @@
 
             <div class="span9" >
                 <h3 class="label label-inverse">Messages</h3>
-                <div class="well message-spot" style="max-height: 400px;">
+                <div class="well message-spot" style="max-height: 400px; overflow:none">
                     <p ng-repeat='message in messages' ng-class='message.me' class=''>
                         {{message.user}}: {{message.text}}
                     </p>
@@ -44,8 +44,46 @@
                     </ul>
                 </div>
             </div>-->
+            <div id="home-tiles" class="container-fluid metro-responsive-tiles" >
+                <div class="row-fluid" style="margin: 15px;">
+                    <div class="span4">
+                        <a class="tile wide imagetext bg-color-orange first" href="https://github.com/bodhisatwag/neochat">
+                            <div class="image-wrapper">
+                                <span class="icon icon-github"></span>
+                            </div>
+                            <div class="column-text">
+                                <div class="text-header2">View project on GitHub</div>
+                                <div class="text4">
+                                    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=aozora&repo=bootmetro&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                                    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=aozora&repo=bootmetro&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="span4">
+                        <a class="tile wide imagetext bg-color-green middle" href="http://neochat.nodejitsu.com/" target="_blank">
+                            <div class="image-wrapper">
+                                <span class="icon icon-grid-view"></span>
+                            </div>
+                            <div class="column-text">
+                                <div class="text-header3">View the Demo online</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="span4 pull-right">
+                        <a class="tile wide imagetext bg-color-blueDark middle" data-toggle='modal' href='#infoModal'>
+                            <div class="image-wrapper">
+                                <span class="icon icon-info"></span>
+                            </div>
+                            <div class="column-text">
+                                <div class="text-header3">About &amp; Credits</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
+    <div>
     <div id="changeNameModal" class="modal hide fade" tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
         <div class="modal-body">
             <h3>Change your name</h3>
@@ -68,39 +106,4 @@
             </p>
         </div>
     </div>
-
-<!--Settings Nav -->
-<div id="charms" class="win-ui-dark slide">
-   
-      <div id="theme-charms-section" class="charms-section">
-         <div class="charms-header">
-            <a href="#" class="close-charms win-backbutton"></a>
-            <h2>Settings</h2>
-         </div>
-   
-         <div class="row-fluid">
-            <div class="span12">
-   
-               <form class="">
-                  <label for="win-theme-select">Change theme:</label>
-                  <select id="win-theme-select" class="">
-                     <option value="metro-ui-light">Light</option>
-                     <option value="metro-ui-dark">Dark</option>
-                  </select>
-               </form>
-   
-            </div>
-         </div>
-      </div>
-        <div class="navbar navbar-fixed-bottom">
-            <ul class="nav">
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </div>
-   </div>
-
 <% include _includes/footer %>
