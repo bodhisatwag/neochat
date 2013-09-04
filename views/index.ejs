@@ -3,6 +3,8 @@
         <div id="preloader" style="padding: 200px 0 0 400px;">
             <div class="progress progress-indeterminate">
                 <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     <div class="container" ng-controller='AppCtrl'>
@@ -21,7 +23,7 @@
 
             <div class="span9" >
                 <h3 class="label label-inverse">Messages</h3>
-                <div class="well message-spot" style="max-height: 400px; overflow:none">
+                <div class="well message-spot" style="max-height: 250px; overflow-y:scroll">
                     <p ng-repeat='message in messages' ng-class='message.me' class=''>
                         {{message.user}}: {{message.text}}
                     </p>
