@@ -1,7 +1,7 @@
 ### Welcome to Neochat(Angularjs+Nodejs+Socket.io Chat).
 This is a simple chatroom built in Nodejs and Socket.io with Angularjs as frontend MVC.
 
-* [Try it at Heroku](http://nodejschat-001.herokuapp.com/)
+* [Try it at Heroku](http://neochat.herokuapp.com/)
 * [Try it at Nodejitsu](http://neochat.nodejitsu.com/)
 
 ```
