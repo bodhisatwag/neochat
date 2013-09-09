@@ -1,0 +1,4 @@
+To use up just replace your Bootstrap styles *.css file on one of this themes files.
+Only for personal and non-commercial use. 
+More Bootstrap 3.0. themes with Less files 
+with commercial and extended Licenses available on http://www.bootstraptor.com
